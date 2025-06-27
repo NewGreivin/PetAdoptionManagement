@@ -18,14 +18,18 @@ public abstract class Person {
         return email;
     }
 
+    public void setEmail(String email) {
+        this.email = email;
+    }
+    
     public Person(String id, String nombre, String email) {
         this.id = id;
         this.nombre = nombre;
         this.email = email;
     }
-
+    
     @Override
     public String toString() {
-        return "Person: " + "id: " + id + ", nombre: " + nombre + ", email: " + email;
+        return "id: " + id + ", nombre: " + nombre + ", email: " + email;
     }
 }
