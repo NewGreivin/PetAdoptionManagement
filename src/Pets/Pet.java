@@ -4,10 +4,10 @@
 package Pets;
 
 public abstract class Pet {
-    private int id;
-    private String name;
-    private int age;
-    private StatePets state;
+    protected int id;
+    protected String name;
+    protected int age;
+    protected StatePets state;
 
     public int getId() {
         return id;
