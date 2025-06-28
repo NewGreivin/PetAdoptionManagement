@@ -22,8 +22,8 @@ public abstract class Pet {
         return state;
     }
 
-    public void setState(StatePets state) {
-        this.state = state;
+    public void setState(StatePets newState) {
+        this.state = newState;
     }
     
     public Pet(int id, String name, int age) {
@@ -37,4 +37,6 @@ public abstract class Pet {
     public String toString() {
         return "Pet: " + "id: " + id + ", name: " + name + ", age: " + age + ", state: " + state;
     }
+    
+    
 }

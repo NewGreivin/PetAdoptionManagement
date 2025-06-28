@@ -20,6 +20,6 @@ public enum StatePets {
 
     @Override
     public String toString() {
-        return "StatePets: " + " state: " + state;
+        return state;
     }
 }
