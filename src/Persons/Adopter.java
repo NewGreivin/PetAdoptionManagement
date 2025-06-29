@@ -21,7 +21,7 @@ public class Adopter extends Person {
         this.type_of_housing = type_of_housing;
     }
 
-    public Adopter(String phone, String type_of_housing, String id, String nombre, String email) {
+    public Adopter(String id, String nombre, String email, String phone, String type_of_housing) {
         super(id, nombre, email);
         this.phone = phone;
         this.type_of_housing = type_of_housing;

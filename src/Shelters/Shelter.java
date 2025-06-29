@@ -25,7 +25,6 @@ public class Shelter {
         return petList;
     }
     
-
     public void setMaxCapacity(int maxCapacity) {
         this.maxCapacity = maxCapacity;
     }
@@ -34,16 +33,14 @@ public class Shelter {
         int max = petList.length;
         for (int i = 0; i < max; i++) {
             if (petList[i] == null) {
-            if (max < maxCapacity){
                 petList[i] = pet;
                 return true;
-            }
             }
         }
         return false;
     }
     
-    public Shelter(int id, String locate, int maxCapacity, String[] PetList) {
+    public Shelter(int id, String locate, int maxCapacity) {
         this.id = id;
         this.locate = locate;
         this.maxCapacity = maxCapacity;
@@ -71,8 +68,8 @@ public class Shelter {
                 } else if (p.getState() == StatePets.ADOPTED) {
                     adopted++;
                 }
+            }
         }
-        }
-        return "Shelter: " + "id: " + id + ", locate: " + locate + ", maxCapacity: " + maxCapacity + ", PetList: " + max + "available" + available + "Adopted" + adopted;
-}
+        return "Shelter: " + "id: " + id + ", locate: " + locate + ", maxCapacity: " + maxCapacity + ", PetList: " + max + ", available: " + available + ", Adopted: " + adopted;
+    }
 }

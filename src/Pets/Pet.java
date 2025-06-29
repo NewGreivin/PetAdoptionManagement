@@ -26,17 +26,15 @@ public abstract class Pet {
         this.state = newState;
     }
     
-    public Pet(int id, String name, int age) {
+    public Pet(int id, String name, int age, StatePets state) {
         this.id = id;
         this.name = name;
         this.age = age;
-        this.state = StatePets.AVAILABLE;
+        this.state = state;
     }
 
     @Override
     public String toString() {
-        return "Pet: " + "id: " + id + ", name: " + name + ", age: " + age + ", state: " + state;
+        return "id: " + id + ", name: " + name + ", age: " + age + ", state: " + state;
     }
-    
-    
 }

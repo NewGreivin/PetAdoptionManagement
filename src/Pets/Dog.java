@@ -14,13 +14,13 @@ public class Dog extends Pet{
         this.trainingLevel = trainingLevel;
     }
 
-    public Dog(int id, String name, int age, int trainingLevel) {
-        super(id, name, age);
+    public Dog(int id, String name, int age, StatePets state ,int trainingLevel) {
+        super(id, name, age, state);
         this.trainingLevel = trainingLevel;
     }
 
     @Override
     public String toString() {
-        return "Dog: " + "id: " + id + ", name: " + name + ", age: " + age + ", state: " + state + "trainingLevel: " + trainingLevel;
+        return "Dog: " + super.toString() + "trainingLevel: " + trainingLevel;
     }
 }
